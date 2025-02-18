@@ -1,5 +1,5 @@
+import { subscriptions } from 'infra/drizzle/schema/subscriptions'
 import { db } from '../infra/drizzle/client'
-import { subscriptions } from '../infra/drizzle/schema/subscriptions'
 
 export interface SubscribeToEventParams {
   name: string
