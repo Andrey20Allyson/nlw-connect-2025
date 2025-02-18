@@ -1,3 +1,4 @@
+import axios from 'axios'
 import orchestrator from 'tests/orchestrator'
 import { beforeEach, test } from 'vitest'
 
@@ -6,6 +7,8 @@ beforeEach(async () => {
   await orchestrator.runMigrations()
 })
 
-test('test tester', () => {
-  console.log('test')
+test('request api status', async () => {
+  const resp = await axios.get('/status')
+
+  console.log(resp.status)
 })

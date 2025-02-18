@@ -40,6 +40,15 @@ app.register(subscribeToEventRoute)
 app.register(accessInviteLinkRoute)
 app.register(statusRoute)
 
-app.listen({ port: env.PORT }).then(() => {
-  console.log(`HTTP server is running in http://localhost:${env.PORT}`)
-})
+function listen() {
+  app
+    .listen({ port: env.PORT })
+    .then(() => {
+      console.log(`HTTP server is running in http://localhost:${env.PORT}`)
+    })
+    .catch(reason => {
+      console.log(reason)
+    })
+}
+
+listen()
