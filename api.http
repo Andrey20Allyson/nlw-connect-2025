@@ -5,3 +5,7 @@ Content-Type: application/json
   "name": "Andrey Allyson",
   "email": "andrey@email.com"
 }
+
+###
+
+GET http://localhost:3333/invites/703d1530-4df2-486a-a990-69ca7d7f8fe3
