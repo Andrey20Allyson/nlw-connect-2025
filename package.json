@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "tsx watch --env-file=.env src/server.ts"
+    "dev": "tsx watch src/server.ts",
+    "test": "vitest run",
+    "migrations:generate": "drizzle-kit generate",
+    "migrations:run": "drizzle-kit migrate"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +16,7 @@
     "@fastify/cors": "^10.0.2",
     "@fastify/swagger": "^9.4.2",
     "@fastify/swagger-ui": "^5.2.2",
+    "dotenv": "^16.4.7",
     "drizzle-orm": "^0.39.3",
     "fastify": "^5.2.1",
     "fastify-type-provider-zod": "^4.0.2",
@@ -25,6 +29,7 @@
     "@types/node": "^22.13.4",
     "drizzle-kit": "^0.30.4",
     "tsx": "^4.19.2",
-    "typescript": "^5.7.3"
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.6"
   }
 }
