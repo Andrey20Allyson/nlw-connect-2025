@@ -1,0 +1,14 @@
+{
+  "test": ".*\\.ts$",
+  "jsc": {
+    "parser": {
+      "syntax": "typescript",
+      "dynamicImport": true
+    },
+    "target": "es2021",
+    "baseUrl": "src"
+  },
+  "module": {
+    "type": "commonjs"
+  }
+}

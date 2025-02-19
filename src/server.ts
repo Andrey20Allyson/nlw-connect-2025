@@ -1,6 +1,7 @@
 import { fastifyCors } from '@fastify/cors'
 import fastifySwagger from '@fastify/swagger'
 import fastifySwaggerUi from '@fastify/swagger-ui'
+import { env } from 'env'
 import { fastify } from 'fastify'
 import {
   type ZodTypeProvider,
@@ -8,14 +9,13 @@ import {
   serializerCompiler,
   validatorCompiler,
 } from 'fastify-type-provider-zod'
+import { accessInviteLinkRoute } from 'routes/access-invite-link.route'
 import { getRankingRoute } from 'routes/get-ranking.route'
 import { getSubscriberInviteClicksRoute } from 'routes/get-subscriber-invite-clicks.route'
 import { getSubscriberInviteCountRoute } from 'routes/get-subscriber-invite-count.route'
 import { getSubscriberRankingPositionRoute } from 'routes/get-subscriber-ranking-position.route'
-import { env } from './env'
-import { accessInviteLinkRoute } from './routes/access-invite-link.route'
-import { statusRoute } from './routes/status.route'
-import { subscribeToEventRoute } from './routes/subscribe-to-event.route'
+import { statusRoute } from 'routes/status.route'
+import { subscribeToEventRoute } from 'routes/subscribe-to-event.route'
 
 const app = fastify().withTypeProvider<ZodTypeProvider>()
 

@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { migrate } from 'functions/migrate'
 import sleep from 'helpers/sleep'
-import { db } from '../infra/drizzle/client'
+import { db } from 'infra/drizzle/client'
 
 async function clearDatabase() {
   await db.$client.begin(async transaction => {

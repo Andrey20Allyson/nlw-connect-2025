@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "tsx watch src/server.ts",
     "test": "vitest run",
+    "build": "swc src -d dist",
     "migrations:generate": "drizzle-kit generate",
     "migrations:run": "drizzle-kit migrate"
   },
@@ -26,6 +27,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
+    "@swc/cli": "^0.6.0",
     "@types/node": "22.13.4",
     "axios": "^1.7.9",
     "drizzle-kit": "0.30.4",

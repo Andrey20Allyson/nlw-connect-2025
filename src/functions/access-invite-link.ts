@@ -1,4 +1,4 @@
-import { redis } from '../infra/redis/client'
+import { redis } from 'infra/redis/client'
 
 export interface AccessInviteLinkParams {
   subscriberId: string

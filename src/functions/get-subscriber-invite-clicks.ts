@@ -1,4 +1,4 @@
-import { redis } from '../infra/redis/client'
+import { redis } from 'infra/redis/client'
 
 export interface GetSubscriberInviteClicksParams {
   subscriberId: string
