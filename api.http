@@ -3,9 +3,21 @@ Content-Type: application/json
 
 {
   "name": "Andrey Allyson",
-  "email": "andrey@email.com"
+  "email": "invitedd3@email.com",
+  "referrer": "90a68085-0a92-4333-90ee-f88b5fb0f886"
 }
 
 ###
 
-GET http://localhost:3333/invites/703d1530-4df2-486a-a990-69ca7d7f8fe3
+GET http://localhost:3333/invites/90a68085-0a92-4333-90ee-f88b5fb0f886
+
+
+###
+
+
+GET http://localhost:3333/subscriptions/90a68085-0a92-4333-90ee-f88b5fb0f886/ranking/clicks
+
+###
+
+
+GET http://localhost:3333/ranking
